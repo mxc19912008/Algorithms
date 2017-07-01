@@ -1,0 +1,309 @@
+/*-----------------------------------------------------------------------------------
+
+1 - Theme/Meta Options
+
+-----------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------
+
+1 - Theme Options
+
+--------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+General
+--------------------------------------------------------------*/
+
+.appearance_page_theme-options #gp-theme-options.wrap {
+position: relative;
+width: 90%;
+}
+#gp-theme-options * {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+#gp-theme-options code {
+font-size: 10px;
+}
+
+
+/*--------------------------------------------------------------
+Buttons
+--------------------------------------------------------------*/
+
+#gp-theme-options .submit {
+float: left;
+clear: both;
+margin: 15px 0;
+padding: 0;
+width: 100%;
+}
+
+/*--------------------------------------------------------------
+Tabs
+--------------------------------------------------------------*/
+
+#gp-theme-options .tabs {
+position: relative;
+z-index: 1;
+float: left;
+margin: 0;
+width: 20%;
+border-top: 1px solid #e7e7e7;
+}
+#gp-theme-options .tabs a {
+display: block;
+margin: 0;
+padding: 10px 15px;
+border-right: 1px solid #e7e7e7;
+border-bottom: 1px solid #e7e7e7;
+border-left: 1px solid #e7e7e7;
+background: #f7f7f7;
+color: #404040;
+text-decoration: none !important;
+font-weight: normal;
+font-size:12px;
+cursor: pointer;
+}
+#gp-theme-options .tabs a:hover {
+background-color: #fff;
+}
+#gp-theme-options .tabs .tab-active {
+border-right: 0px solid #fff;
+background: #fff;
+color: #000;
+font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+Theme Options
+--------------------------------------------------------------*/
+
+#gp-theme-options #panels {
+position: relative;
+visibility: hidden;
+float: left;
+width: 80%;
+}
+.no-js #gp-theme-options #panels {
+visibility: visible;
+}
+#gp-theme-options .panel {
+position: relative;
+z-index: 0;
+float: left;
+margin-left: -1px;
+padding: 10px 20px 20px 20px;
+min-height: 700px;
+width: 100%;
+border: 1px solid #e7e7e7;
+background: #fff;
+}
+#gp-theme-options .gp-spacer {
+float: left;
+clear: both;
+width: 100%;
+height: 20px;
+}
+#gp-theme-options .gp-separator {
+float: left;
+clear: both;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+margin: 0 0 20px -20px;
+padding-right: 40px;
+width: 100%;
+height: 1px;
+border-top: 1px solid #eee;
+}
+
+/*--------------------------------------------------------------
+Metaboxes
+--------------------------------------------------------------*/
+
+#gp-theme-options .gp-meta-section-title {
+margin-top: 20px;
+padding-bottom: 5px;
+font-size: 16px;
+margin-bottom: 15px;
+font-weight: bold;
+}
+#gp-theme-options.postbox .meta-settings {
+clear: both;
+overflow: hidden;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+margin-left: -12px;
+padding: 0 24px 8px 12px;
+width: 100%;
+border-bottom: 1px solid #eee;
+font-size: 12px;
+}
+.no-js #gp-theme-options.postbox .meta-settings.hidden {
+display: block;
+}
+
+/*--------------------------------------------------------------
+Option Boxes
+--------------------------------------------------------------*/
+
+#gp-theme-options .gp-option {
+float: left;
+margin-bottom: 20px;
+width: 100%;
+}
+#gp-theme-options .gp-option.gp-stripped {
+margin: 0 20px 0 0;
+width: auto;
+}
+
+/*--------------------------------------------------------------
+Headers
+--------------------------------------------------------------*/
+
+#gp-theme-options .panel h3 {
+margin: 0;
+color: #2EA2CC;
+}
+#gp-theme-options h4 {
+margin: 0 0 5px 0;
+padding: 0;
+border: 0;
+font-size: 14px;
+}
+#gp-theme-options.postbox h4 {
+font-size: 12px;
+}
+#gp-theme-options .gp-option.gp-stripped h4 {
+color: #777;
+font-size: 12px;
+}
+
+/*--------------------------------------------------------------
+Descriptions
+--------------------------------------------------------------*/
+
+#gp-theme-options .gp-option-desc {
+float: left;
+clear: both;
+margin-top: 4px;
+width: 100%;
+color: #808080;
+font-size: 12px;
+}
+#gp-theme-options.postbox .gp-option-desc {
+font-size: 11px;
+}
+#gp-theme-options.postbox .gp-header-desc.gp-option-desc {
+margin: -15px 0 20px 0;
+font-size: 12px;
+}
+
+/*--------------------------------------------------------------
+Forms
+--------------------------------------------------------------*/
+
+#gp-theme-options input[type='text'],
+#gp-theme-options select,
+#gp-theme-options textarea {
+max-width: 100%;
+}
+#gp-theme-options input[type='checkbox'] {
+float: left;
+margin: 1px 8px 0 0;
+}
+#gp-theme-options input[type='radio'] {
+float: left;
+margin: 3px 5px 0 0;
+}
+#gp-theme-options .gp-radio-button {
+float: left;
+margin-right: 15px;
+}
+#gp-theme-options .wp-picker-container * {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+}
+#gp-theme-options .wp-picker-holder {
+position: absolute;
+z-index: 1;
+margin-top: -8px;
+}
+#gp-theme-options .wp-picker-open + .wp-picker-input-wrap { 
+position: absolute;
+z-index: 2;
+margin: -9px 0 0 -3px;
+margin-left: -3px;
+padding: 5px;
+border: 1px solid #DFDFDF;
+border-bottom: 0;
+background: #fff;
+}
+
+/*--------------------------------------------------------------
+Images Upload Interface
+--------------------------------------------------------------*/
+
+#gp-theme-options #gallery-images-container {
+margin-bottom: 12px;
+}
+#gp-theme-options #gallery-images-container ul {
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+#gp-theme-options #gallery-images-container ul li.image,
+#gp-theme-options #gallery-images-container ul li.add,
+#gp-theme-options #gallery-images-container ul li.gp-gallery-upload-placeholder {
+position: relative;
+float: left;
+overflow: hidden;
+margin: 9px 9px 0 0;
+width: 80px;
+height: 80px;
+background: #F7F7F7;
+cursor: move;
+}
+#gp-theme-options #gallery-images-container ul li.image img,
+#gp-theme-options #gallery-images-container ul li.add img,
+#gp-theme-options #gallery-images-container ul li.gp-gallery-upload-placeholder img {
+display: block;
+width: 100%;
+height: auto;
+}
+#gp-theme-options #gallery-images-container ul li .delete {
+position: absolute;
+top: 3px;
+right: 3px;
+display: none;
+overflow: hidden;
+width: 15px;
+height: 15px;
+background: #1E8CBE;
+box-shadow: 0 0 0 1px #FFF,0 0 0 2px #1E8CBE;
+color: #fff;
+text-align: center;
+text-decoration: none;
+font-size: 14px;
+font-family: 'FontAwesome';
+line-height: 15px;
+}
+#gp-theme-options #gallery-images-container ul li a.delete:before {
+content: '\f00d';
+}
+#gp-theme-options #gallery-images-container ul li:hover .delete {
+display: block;
+}
+
+/*--------------------------------------------------------------
+Demo Data Importer
+--------------------------------------------------------------*/
+
+.radium-importer-message {
+display: none;
+}
