@@ -43,15 +43,19 @@ public class Quick {
             // find item on lo to swap
             while (less(a[++i], v))
                 if (i == hi) break;
-
+            //从第二个元素开始和v比较，如果比v小，继续移动，
+            //如果比v大，循环停下，如果到头也没找到，循环也停
+            //目的是找到比v大的元素
             // find item on hi to swap
             while (less(v, a[--j]))
                 if (j == lo) break;      // redundant since a[lo] acts as sentinel
-
+            //从倒数第一个元素开始和v比较，如果比v大，继续移动，
+            //如果比v小，循环停下，如果到头也没找到，循环也停
+            //目的是找到比v小的元素
             // check if pointers cross
             if (i >= j) break;
-            //直到左右的指针重合或交叉时退出循环
-
+            //左右的指针重合或交叉时退出循环
+            //以上都是在找寻需要对换的指针
             exch(a, i, j);
             //左起大于分割点的和右起小于分割点的值对换
         }

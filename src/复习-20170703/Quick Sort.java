@@ -9,7 +9,7 @@ public static class QuickSort(){
 	private static void sort(Comparable a[], int lo, int hi){
 		if(hi<= lo) return; //忘记这句
 		int mid = partition(a,lo,hi);
-		sort(a,lo,mid);
+		sort(a,lo,mid-1);//注意这里是mid-1
 		sort(a,mid+1,hi);
 		//assert isSorted(a,lo,mid);
 		//assert isSorted(a,mid+1,hi);
@@ -32,7 +32,7 @@ public static class QuickSort(){
 			}
 			if(i>=j) break;
 			exch(a,i,j)
-		}
+		}//还是没有理解到位
 		exch(a,j,lo);
 		return j;
 	}
