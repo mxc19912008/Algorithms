@@ -12,7 +12,6 @@ public class Quick {
         StdRandom.shuffle(a);
         //洗牌使得input的影响变小
         sort(a, 0, a.length - 1);
-        //主排序
         assert isSorted(a);
         //排序后检查
     }

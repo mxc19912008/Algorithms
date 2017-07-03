@@ -40,7 +40,7 @@ public class MergeBU(){
     			//increment=sz+sz，lo<N-sz是因为要留出sz的空间供merge；
     			//遍历所有的(0,sz),(sz+1,2)...
     			merge(a,lo,lo+sz-1,Math.min(lo+sz+sz-1,N-1))
-    			//看图
+    			//看图(0,0,1),(2,2,3)...
     		}
     	}
     }
