@@ -6,7 +6,7 @@ public class MergeTD(){
 	Public static void Sort(Comparable a[]){
 		int N = a.length;
 		aux = new Comparable[N];
-		Sort(a,lo,mid,hi);
+		Sort(a,lo,hi);
 		assert isSorted(a,lo,hi);//忘写这句了
 	}
 	private static void Sort(Comparable a[], int lo, int hi){
